@@ -2,20 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./build/styles/index.css" type="text/css" charset="utf-8">
   <title>Pokemon</title>
 </head>
 <body>
-  <h1>POKEMON xD</h1>
-  <h2 id="region-name"></h2>
-  <p id="pokemon-name"></p>
-  <img id="pokemon-img" alt="">
-  <button
-    id="btn-random-pokemon"
-    name="btn-random-pokemon"
-    type="button"
-  >
-    Select other Pokermon
-  </button>
-  <script src="./index.js"></script>
+  <div class="modal-pokedex">
+    <div class="pokedex-top"></div>
+    <div class="pokedex-bottom"></div>
+    <div class="pokedex-center"></div>
+  </div>
+
+  <main>
+    <h1 class="title">POKEMON xD</h1>
+  
+    <section class="random-pokemon">
+      <h2 class="title-random">Random Pokemon</h2>
+      <p id="random-pokemon-name" class="pokemon-name"></p>
+      <img id="random-pokemon-img" class="pokemon-img" alt="random-pokemon">
+      <div class="container-btn">
+        <button
+          id="btn-random-pokemon"
+          name="btn-random-pokemon"
+          type="button"
+        >
+          Add to Favorite
+        </button>
+        <button
+          id="btn-add-favorite"
+          name="btn-add-favorite"
+          type="button"
+        >
+          Select other Pokermon
+        </button>
+       </div>
+    </section>
+
+    <section class="favorite-pokemon">
+      <h2 class="title-favorite">Favoritos</h2>
+      <p id="favorite-pokemon-name" class="pokemon-name"></p>
+      <img 
+        id="favorite-pokemon-img"
+        class="pokemon-img"
+        alt="favorite-pokemon"
+      >
+      <button
+        id="btn-delete-favorite"
+        name="btn-delete-favorite"
+        type="button"
+      >
+        Delete this of favorite
+      </button>
+    </section>
+  </main>
+
+  <script src="./src/scripts/index.js"></script>
 </body>
 </html>

@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "styles": "sass src/styles/index.scss build/styles/index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Luis Rodriguez - DarkusPhantom <darkusphantom13@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
 }
